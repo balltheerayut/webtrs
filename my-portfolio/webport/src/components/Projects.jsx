@@ -8,6 +8,17 @@ const projects = [
 
 const Projects = () => {
   return (
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        minHeight: "100vh",
+        textAlign: "center",
+        padding: "600px",
+      }}
+    >
     <Container sx={{ marginTop: "8vh" }}>
       <Typography variant="h3" gutterBottom>My Projects</Typography>
       {projects.map((project, index) => (
@@ -42,7 +53,7 @@ const Projects = () => {
           </CardContent>
         </Card>
       ))}
-    </Container>
+    </Container></Box>
   );
 };
 

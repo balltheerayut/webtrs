@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "../webport/src/components/Navbar";
-import Home from "../webport/src/components/Home";
-import About from "../webport/src/components/About";
-import Projects from "../webport/src/components/Projects";
-import Contact from "../webport/src/components/Contact";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import { ThemeContextProvider } from "./ThemeContext";
-import LoadingPage from "../webport/src/components/LoadingPage"; // นำเข้าหน้าโหลด
-
+import LoadingPage from "./components/LoadingPage"; // นำเข้าหน้าโหลด
+import './App.css';
 function App() {
   const [loading, setLoading] = useState(true); // สถานะการโหลด
 

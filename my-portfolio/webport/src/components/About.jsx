@@ -32,8 +32,13 @@ const About = () => {
   return (
     <Box
       sx={{
-        textAlign: "center",
-        mt: 6, // เว้นระยะห่างจากแทบบน
+        display: "flex",
+        flexDirection: "column",  // จัดให้คอนเทนต์อยู่ในรูปแบบ column
+        alignItems: "center",     // จัดให้อยู่กลางในแนวนอน
+        justifyContent: "center", // จัดให้อยู่กลางในแนวตั้ง
+        height: "100vh",          // ให้สูงเต็มหน้าจอ
+        textAlign: "center",      // ข้อความจะถูกจัดกลาง
+        padding: "center",  // ปรับ padding สำหรับหน้าจอที่ต่างกัน
       }}
     >
       {/* รูปภาพ */}
@@ -45,6 +50,7 @@ const About = () => {
           height: "300px",
           borderRadius: "20px",
           objectFit: "cover",
+          marginTop: "20px", // ลดตำแหน่งของรูป
         }}
       />
 

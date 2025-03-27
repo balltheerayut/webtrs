@@ -26,12 +26,15 @@ const Navbar = () => {
 
   return (
     <AppBar
-      position="static"
+      position="fixed" // เปลี่ยนเป็น fixed
       sx={{
+        width: "100%",
         height: "90px",
+        top: 0, // ติดอยู่ที่ด้านบน
         display: "flex",
         justifyContent: "center",
         backgroundColor: darkMode ? "#333" : "#000066", // เปลี่ยนสีแทบบน
+        zIndex: 1300, // เพื่อให้แน่ใจว่าอยู่ข้างบนสุด
       }}
     >
       <Toolbar sx={{ minHeight: "90px" }}>
@@ -75,7 +78,7 @@ const Navbar = () => {
               <PersonIcon />
             </ListItemIcon>
             About Me
-          </MenuItem >
+          </MenuItem>
           <MenuItem component={Link} to="/projects" onClick={handleMenuClose}>
             <ListItemIcon>
               <WorkIcon />
