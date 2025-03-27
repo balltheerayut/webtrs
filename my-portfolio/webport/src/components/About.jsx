@@ -33,12 +33,12 @@ const About = () => {
     <Box
       sx={{
         display: "flex",
-        flexDirection: "column",  // จัดให้คอนเทนต์อยู่ในรูปแบบ column
-        alignItems: "center",     // จัดให้อยู่กลางในแนวนอน
+        flexDirection: "column", // ให้เนื้อหาเรียงกันในแนวตั้ง
+        alignItems: "flex-start",  // จัดให้อยู่ชิดขวา
         justifyContent: "center", // จัดให้อยู่กลางในแนวตั้ง
-        height: "100vh",          // ให้สูงเต็มหน้าจอ
-        textAlign: "center",      // ข้อความจะถูกจัดกลาง
-        padding: "center",  // ปรับ padding สำหรับหน้าจอที่ต่างกัน
+        height: "100vh",         // ให้สูงเต็มหน้าจอ
+        textAlign: "left",       // ข้อความจะจัดชิดซ้าย
+        paddingLeft: "800px",     // เพิ่ม padding ด้านซ้ายให้รูปและข้อความเลื่อนขวา
       }}
     >
       {/* รูปภาพ */}
@@ -50,7 +50,7 @@ const About = () => {
           height: "300px",
           borderRadius: "20px",
           objectFit: "cover",
-          marginTop: "20px", // ลดตำแหน่งของรูป
+          marginBottom: "20px", // เพิ่ม margin เพื่อให้รูปห่างจากปุ่ม
         }}
       />
 
